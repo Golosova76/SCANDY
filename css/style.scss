@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900&display=swap");
+
+// основной шрифт и размер //
+
+$fontFamily: "Montserrat";
+$fontWeight: 500;
+$fontSize: 14px;
+$mainColor: #252b42;
+
+@import "_null";
+
+//=================== Общие стили  ================================//
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  // Прижимаем footer
+  > main {
+    flex: 1 1 auto;
+  }
+  // Фикс для слайдеров
+  > * {
+    min-width: 0;
+  }
+}
+
+[class*="__container"] {
+  max-width: 1076px; // сначала контейнер был 1046 как на макете, стал 1076 изза padding 30px
+  margin: 0px auto;
+  padding: 0px 15px;
+  @media (max-width: 1087px) {
+    // max-width: 970px;
+  }
+  @media (max-width: 991.98px) {
+    // max-width: 750px;
+  }
+  @media (max-width: 767.98px) {
+    // max-width: none;
+  }
+}
+
+[class*="-ibg"] {
+  position: relative;
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+}
+
+//=================== Общие стили  ================================//
