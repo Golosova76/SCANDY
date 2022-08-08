@@ -110,7 +110,7 @@ html {
 
   // .header__address
 
-  &__address {    
+  &__address {
     font-style: normal;
     padding: 2.5px 0px 2.5px 18px;
     transition: all 0.3s ease 0s;
@@ -124,7 +124,6 @@ html {
   }
 }
 .menu {
-
   // .menu__list
 
   &__list {
@@ -149,7 +148,6 @@ html {
       text-decoration: underline;
       color: #25191a;
     }
-    
   }
 }
 
@@ -158,7 +156,6 @@ html {
 //=================== main-block  ================================//
 
 .page {
-
   // .page__block-main
 
   &__block-main {
@@ -166,7 +163,6 @@ html {
   }
 }
 .main-block {
-
   // .main-block__container
 
   &__container {
@@ -198,7 +194,7 @@ html {
   &__text {
     max-width: 415px;
     font-weight: 400;
-    line-height: 1.67;    
+    line-height: 1.67;
     &:not(:last-child) {
       margin: 0px 0px 21px 0px;
     }
@@ -233,7 +229,7 @@ html {
   font-size: 20px;
   line-height: 1.2;
   text-align: center;
-  background: #CC8B86;
+  background: #cc8b86;
   transition: all 0.3s ease 0s;
   &:hover {
     background: #644847;
@@ -246,7 +242,6 @@ html {
 //=================== about-us  ================================//
 
 .page {
-
   // .page__about-us
 
   &__about-us {
@@ -310,5 +305,74 @@ html {
   }
 }
 
-
 //=================== about-us  ================================//
+
+//=================== statistics  ================================//
+
+.page {
+  // .page__statistics
+
+  &__statistics {
+    background: #8d7370;
+  }
+}
+.statistics {
+  padding: 86px 0px 80px 0px;
+  @media (max-width: 620.98px) {
+    padding: 46px 0px 40px 0px;
+  }
+
+  // .statistics__container
+
+  &__container {
+    max-width: 1066px;
+  }
+
+  // .statistics__items
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: 620.98px) {
+      row-gap: 20px;
+    }
+  }
+
+  // .statistics__item
+
+  &__item {
+    flex: 0 1 33.333%;
+    text-align: center;
+    @media (max-width: 620.98px) {
+      flex: 1 1 100%;
+    }
+  }
+
+  // .statistics__value
+
+  &__value {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 1.24;
+    color: #ffffff;
+    &:not(:last-child) {
+      margin: 0px 0px 8px 0px;
+    }
+    @media (max-width: 620.98px) {
+      font-size: 42px;
+    }
+  }
+
+  // .statistics__text
+
+  &__text {
+    font-size: 30px;
+    line-height: 1.23;
+    text-transform: uppercase;
+    color: #ffffff;
+    @media (max-width: 620.98px) {
+      font-size: 26px;
+    }
+  }
+}
+//=================== statistics  ================================//
