@@ -62,9 +62,14 @@ html {
 //=================== header  ================================//
 
 .header {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
 
   // .header__container
 
@@ -81,9 +86,10 @@ html {
   // .header__logo
 
   &__logo {
+    position: relative;
     margin: 0px 89px 0px 0px;
     padding: 2.5px 0px 2.5px 25px;
-    position: relative;    
+    text-transform: uppercase;
     &::before {
       content: "";
       background: url(../img/header/logo.svg);
@@ -150,4 +156,159 @@ html {
 //=================== header  ================================//
 
 //=================== main-block  ================================//
+
+.page {
+
+  // .page__block-main
+
+  &__block-main {
+    position: relative;
+  }
+}
+.main-block {
+
+  // .main-block__container
+
+  &__container {
+    max-width: 1066px;
+  }
+
+  // .main-block__body
+
+  &__body {
+    position: relative;
+    z-index: 2;
+    padding: 152px 0px 168px 0px;
+  }
+
+  // .main-block__title
+
+  &__title {
+    max-width: 534px;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 1.24;
+    &:not(:last-child) {
+      margin: 0px 0px 24px 0px;
+    }
+  }
+
+  // .main-block__text
+
+  &__text {
+    max-width: 415px;
+    font-weight: 400;
+    line-height: 1.67;    
+    &:not(:last-child) {
+      margin: 0px 0px 21px 0px;
+    }
+  }
+
+  // .main-block__buttons
+
+  &__buttons {
+  }
+
+  // .main-block__button
+
+  &__button {
+  }
+
+  // .main-block__image-ibg
+
+  &__image-ibg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 74px;
+  padding: 25px 68px;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  background: #CC8B86;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    background: #644847;
+    color: #fff;
+  }
+}
+
 //=================== main-block  ================================//
+
+//=================== about-us  ================================//
+
+.page {
+
+  // .page__about-us
+
+  &__about-us {
+  }
+}
+.about-us {
+  padding: 65px 0px 21px 0px;
+
+  // .about-us__container
+
+  &__container {
+    max-width: 1066px;
+  }
+
+  // .about-us__title
+
+  &__title {
+    &:not(:last-child) {
+      margin: 0px 0px 40px 0px;
+    }
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.25;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  // .about-us__body
+
+  &__body {
+    display: flex;
+    column-gap: 63px;
+  }
+
+  // .about-us__image-ibg
+
+  &__image-ibg {
+    flex: 0 0 43%;
+    padding: 0px 0px 44.88% 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  // .about-us__text
+
+  &__text {
+    flex: 1 1 auto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  // .about-us__one
+
+  &__one {
+    margin-bottom: 46px;
+  }
+
+  // .about-us__two
+
+  &__two {
+  }
+}
+
+
+//=================== about-us  ================================//
