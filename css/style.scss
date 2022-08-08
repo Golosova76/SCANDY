@@ -4,8 +4,8 @@
 
 $fontFamily: "Montserrat";
 $fontWeight: 500;
-$fontSize: 14px;
-$mainColor: #252b42;
+$fontSize: 18px;
+$mainColor: #533738;
 
 @import "_null";
 
@@ -31,7 +31,7 @@ html {
 }
 
 [class*="__container"] {
-  max-width: 1076px; // сначала контейнер был 1046 как на макете, стал 1076 изза padding 30px
+  max-width: 1230px; // сначала контейнер был 1200 как на макете, стал 1066 изза padding 30px
   margin: 0px auto;
   padding: 0px 15px;
   @media (max-width: 1087px) {
@@ -58,3 +58,96 @@ html {
 }
 
 //=================== Общие стили  ================================//
+
+//=================== header  ================================//
+
+.header {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+  // .header__container
+
+  &__container {
+    display: flex;
+    min-height: 97px;
+    align-items: center;
+    @media (max-width: 1230.98px) {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+  }
+
+  // .header__logo
+
+  &__logo {
+    margin: 0px 89px 0px 0px;
+    padding: 2.5px 0px 2.5px 25px;
+    position: relative;    
+    &::before {
+      content: "";
+      background: url(../img/header/logo.svg);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  // .header__menu
+
+  &__menu {
+    padding: 2.5px 0px;
+    margin: 0px 34px 0px 0px;
+  }
+
+  // .header__address
+
+  &__address {    
+    font-style: normal;
+    padding: 2.5px 0px 2.5px 18px;
+    transition: all 0.3s ease 0s;
+    @media (max-width: 1230.98px) {
+      padding: 2.5px 25px 2.5px 0px;
+    }
+    &:hover {
+      text-decoration: underline;
+      color: #25191a;
+    }
+  }
+}
+.menu {
+
+  // .menu__list
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+
+  // .menu__item
+
+  &__item {
+    &:not(:last-child) {
+      margin: 0px 26px 0px 0px;
+    }
+  }
+
+  // .menu__link
+
+  &__link {
+    transition: all 0.3s ease 0s;
+    &:hover {
+      text-decoration: underline;
+      color: #25191a;
+    }
+    
+  }
+}
+
+//=================== header  ================================//
+
+//=================== main-block  ================================//
+//=================== main-block  ================================//
